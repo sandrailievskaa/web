@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title> Music Library </title>
+    <link rel="stylesheet" href="assets/style/css.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img src="assets/images/logo.png">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navigation-toggle-icon"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="navigation">
+                <a href="home.html" class="nav-link link-active">
+                    Home
+                    <div class="link-underline"></div>
+                </a>
+                <a href="artists-grid.html" class="nav-link">
+                    Artists
+                    <div class="link-underline"></div>
+                </a>
+                <a href="blog.html" class="nav-link">
+                    Blog
+                    <div class="link-underline"></div>
+                </a>
+                <a href="payment.html" class="nav-link">
+                    Payment
+                    <div class="link-underline"></div>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    Contact
+                    <div class="link-underline"></div>
+                </a>
+            </div>
+
+          </div>
+        </div>
+    </nav>
+
+    <div class="content contact-content">
+        <h1 class="content-title">Log in</h1>
+        <hr class="title-underline">
+        <h6 style="color: white; text-align: center;">To continue, log in to music heaven.</h6>
+        <button class="button-log-in" onclick="window.location.href='https:www.facebook.com'">CONTINUE WITH
+            FACEBOOK</button>
+        <button class="button-log-in" onclick="window.location.href='https:support.apple.com/en-us/HT204053'">CONTINUE
+            WITH APPLE</button>
+        <button class="button-log-in"
+            onclick="window.location.href='https:myaccount.google.com/?utm_source=sign_in_no_continue'">CONTINUE WITH
+            GOOGLE</button>
+
+        <div class="contact-first-row">
+
+            <input placeholder="Email address or username" type="text" class="contact-input">
+            <input placeholder="Password" type="password" class="contact-input">
+
+        </div>
+        <button class="button">LOG IN</button>
+
+    </div>
+
+</body>
+
+</html>

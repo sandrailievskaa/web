@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Music Library</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="assets/style/css.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img src="assets/images/logo.png">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navigation-toggle-icon"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="navigation">
+                <a href="home.html" class="nav-link">
+                    Home
+                    <div class="link-underline"></div>
+                </a>
+                <a href="artists-grid.html" class="nav-link link-active">
+                    Artists
+                    <div class="link-underline"></div>
+                </a>
+                <a href="blog.html" class="nav-link">
+                    Blog
+                    <div class="link-underline"></div>
+                </a>
+                <a href="payment.html" class="nav-link">
+                    Payment
+                    <div class="link-underline"></div>
+                </a>
+                <a href="contact.html" class="nav-link ">
+                    Contact
+                    <div class="link-underline"></div>
+                </a>
+            </div>
+
+          </div>
+        </div>
+    </nav>
+
+    <div class="content">
+
+        <div class="view-icons">
+            <i class="fas fa-bars view-icon" id="grid-icon" onclick="toggleArtistsView(true)"></i>
+            <i class="fas fa-th view-icon" id="table-icon" onclick="toggleArtistsView(false)"></i>
+        </div>
+
+        <h2 class="content-title">Artists</h2>
+        <hr class="title-underline">
+
+        <div class="grid-holder" id="grid-view">
+
+        </div>
+
+        <table id="table-view">
+
+        </table>
+    </div>
+
+
+    <script src="assets/js/artists.js"></script>
+
+</body>
+
+</html>
